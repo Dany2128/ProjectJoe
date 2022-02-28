@@ -1,62 +1,67 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .header {
-  margin-left: 30rem;
-  margin-right: 30rem;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 50%;
   font-size: 2rem;
-  border: 3px solid rgb(243, 130, 0);
   border-radius: 1rem;
-  box-shadow: 5px 10px 8px orange;
+  text-align: center;
+
 }
 .header a {
   color: white;
   text-decoration: none;
-  padding-left: 10rem;
+  text-align:center;
+  display: inline-block;
+  margin: auto;
+  border: 5px solid orange;
+  border-radius: 30px;
+  font-size: 2rem;
+  
 }
 .header a:hover {
   color: orange;
+  background-color: white;
+  
+}
+.aside a {
+  font-size: 1.5rem;
+  border: 5px solid rgb(243, 130, 0);
+  width: 10%;
+  height: 10%;
+  float: left;
+  color: white;
+  border-radius: 1rem;
+  text-decoration: none;
+  text-align:Center;
+  
 }
 .main {
+  margin: auto;
+  margin-bottom: 20px;
   font-size: 2rem;
-  border: 3px solid rgb(243, 130, 0);
-  margin-left: 15rem;
-  margin-right: 15rem;
-  margin-top: 5rem;
-  padding: 3rem;
+  border: 5px solid rgb(243, 130, 0);
+  width: 50%;
+  text-align: center;
   color: white;
   border-radius: 1rem;
-  box-shadow: 5px 10px 8px orange;
-}
-.aside {
-  font-size: 1.5rem;
-  border: 3px solid rgb(243, 130, 0);
-  position: relative;
-  height: 20rem;
-  width: 14rem;
-  float: left;
-  top: -75.4rem;
-  margin-top: 55.5rem;
-  padding: 3rem;
-  color: white;
-  border-radius: 1rem;
-  box-shadow: 5px 10px 8px orange;
+  
 }
 .footer {
-  border: 3px solid rgb(243, 130, 0);
-  margin: 5rem;
-  padding-left: 33rem;
+  border: 5px solid rgb(243, 130, 0);
   color: white;
   font-size: 2rem;
   border-radius: 1rem;
-  box-shadow: 5px 10px 8px orange;
+  width: 100%;
+  text-align: center;
 }
 #about1 {
   color: white;
@@ -84,23 +89,20 @@ body {
 }
 .joe {
   height: 10vw;
+  display: block;
+  margin: auto;
   position: relative;
-  left: 48rem;
   border-radius: 50rem;
-  box-shadow: 5px 10px 8px orange;
+  
 }
 .train {
   font-style: italic;
   text-decoration: overline underline;
 }
-.asidetext {
-  font-style: italic;
-  color: white;
-  position: relative;
-  text-decoration: underline;
-  text-decoration-color: orange;
-  top: 3rem;
-  left: 1rem;
+.aside a:hover {
+  color: orange;
+  background-color:white;
+  text-decoration: none;
 }
 .fname {
   padding: 1rem;
@@ -127,4 +129,52 @@ body {
   font-size: 2rem;
   color: orange;
   border-radius: 5rem;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .aside {
+    float: none;
+    display: block;
+    position: static;
+    width: 100%;
+  }
+  .header {
+    float:none;
+    display:block;
+    position: static;
+    width: 100%;
+  }
+  .header a {
+    float:none;
+    display:block;
+    position: static;
+    width:100%;
+  }
+  .header a:hover {
+    float:none;
+    display:block;
+    position:static;
+    width:100%;
+  }
+  .main {
+    float:none;
+    display:block;
+    position:static;
+    width:100%;
+  }
+  .footer {
+    float:none;
+    display:block;
+    position:static;
+    width:100%;
+    padding-left: 0;
+    margin: 0;
+  }
+  .train {
+    float:none;
+    display:block;
+    position:static;
+    width:100%;
+  }
 }
