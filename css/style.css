@@ -2,61 +2,64 @@
   box-sizing: border-box;
 }
 body {
-  background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
+  background: linear-gradient(0.25turn, #000000, #ca5b00, #000000);
 }
 .header {
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
   width: 50%;
-  font-size: 2rem;
   border-radius: 1rem;
   text-align: center;
-
+  font-family: "Architects Daughter", cursive;
+  font-family: "Josefin Sans", sans-serif;
 }
 .header a {
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
-  text-align:center;
+  text-align: center;
   display: inline-block;
   margin: auto;
-  border: 5px solid orange;
-  border-radius: 30px;
-  font-size: 2rem;
-  
+  border-radius: 500px;
+  font-size: 1.2rem;
+  margin-right: 3rem;
+  border: solid orange 4px;
+  padding: 0.5rem;
+  font-style: oblique;
 }
+
 .header a:hover {
   color: orange;
-  background-color: white;
-  
 }
 .aside a {
   font-size: 1.5rem;
-  border: 5px solid rgb(243, 130, 0);
+  font-style: oblique;
+  border: 4px solid orange;
   width: 10%;
   height: 10%;
   float: left;
   color: white;
-  border-radius: 1rem;
   text-decoration: none;
-  text-align:Center;
-  
+  border-radius: 1rem;
+  text-align: Center;
+  font-family: "Architects Daughter", cursive;
+  font-family: "Josefin Sans", sans-serif;
 }
 .main {
   margin: auto;
   margin-bottom: 20px;
   font-size: 2rem;
-  border: 5px solid rgb(243, 130, 0);
   width: 50%;
   text-align: center;
   color: white;
   border-radius: 1rem;
-  
+  font-family: "Architects Daughter", cursive;
+  font-family: "Josefin Sans", sans-serif;
 }
+
 .footer {
-  border: 5px solid rgb(243, 130, 0);
   color: white;
   font-size: 2rem;
   border-radius: 1rem;
@@ -87,23 +90,33 @@ body {
   text-align: center;
   text-decoration: underline orange;
 }
+
 .joe {
   height: 10vw;
   display: block;
   margin: auto;
   position: relative;
   border-radius: 50rem;
-  
+  animation: rotation 10s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 .train {
   font-style: italic;
   text-decoration: overline underline;
+  text-decoration-color: chocolate;
 }
 .aside a:hover {
   color: orange;
-  background-color:white;
   text-decoration: none;
 }
+
 .fname {
   padding: 1rem;
   border: 3px solid orange;
@@ -130,7 +143,18 @@ body {
   color: orange;
   border-radius: 5rem;
 }
-
+.lowbietext {
+  color: white;
+  font-size: 1.1rem;
+  font-style: italic;
+  column-count: 3;
+  column-gap: 3rem;
+  line-height: 1.5rem;
+  display: block;
+  column-rule: 2px solid orange;
+  font-family: "Architects Daughter", cursive;
+  font-family: "Josefin Sans", sans-serif;
+}
 
 @media screen and (max-width: 1200px) {
   .aside {
@@ -140,41 +164,47 @@ body {
     width: 100%;
   }
   .header {
-    float:none;
-    display:block;
+    float: none;
+    display: block;
     position: static;
     width: 100%;
   }
   .header a {
-    float:none;
-    display:block;
+    float: none;
+    display: block;
     position: static;
-    width:100%;
+    width: 100%;
   }
   .header a:hover {
-    float:none;
-    display:block;
-    position:static;
-    width:100%;
+    float: none;
+    display: block;
+    position: static;
+    width: 100%;
   }
   .main {
-    float:none;
-    display:block;
-    position:static;
-    width:100%;
+    float: none;
+    display: block;
+    position: static;
+    width: 100%;
   }
   .footer {
-    float:none;
-    display:block;
-    position:static;
-    width:100%;
+    float: none;
+    display: block;
+    position: static;
+    width: 100%;
     padding-left: 0;
     margin: 0;
   }
   .train {
-    float:none;
-    display:block;
-    position:static;
-    width:100%;
+    float: none;
+    display: block;
+    position: static;
+    width: 100%;
+  }
+  .lowbie {
+    float: none;
+    display: block;
+    position: static;
+    width: 100%;
   }
 }
