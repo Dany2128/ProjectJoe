@@ -15,6 +15,7 @@ body {
   text-align: center;
   font-family: "Architects Daughter", cursive;
   font-family: "Josefin Sans", sans-serif;
+  background: linear-gradient(0.25turn, #000000, #833b01, #000000);
 }
 .header a {
   color: rgb(255, 255, 255);
@@ -25,9 +26,9 @@ body {
   border-radius: 500px;
   font-size: 1.2rem;
   margin-right: 3rem;
-  border: solid orange 4px;
   padding: 0.5rem;
   font-style: oblique;
+  column-rule: solid 3px #000000;
 }
 
 .header a:hover {
@@ -36,7 +37,6 @@ body {
 .aside a {
   font-size: 1.5rem;
   font-style: oblique;
-  border: 4px solid orange;
   width: 10%;
   height: 10%;
   float: left;
@@ -67,23 +67,40 @@ body {
   text-align: center;
 }
 #about1 {
+  margin: auto;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  column-count: 3;
+  column-rule: solid 2px orange;
+  display: inline-block;
+  text-align: justify;
   color: white;
-  font-size: 2rem;
+  border-radius: 1rem;
+  font-family: "Architects Daughter", cursive;
+  font-family: "Josefin Sans", sans-serif;
 }
 .grid-container {
   display: grid;
   color: white;
-  background-color: rgb(0, 0, 0);
   gap: 5rem;
   grid-template-columns: auto auto auto;
   padding: 10px;
   border-radius: 10px;
+  font-family: "Architects Daughter", cursive;
+  font-family: "Josefin Sans", sans-serif;
 }
 .grid-box {
   background-color: rgb(12, 12, 12);
   border: 5px rgb(255, 255, 255) solid;
   font-size: 2rem;
   border-radius: 10px;
+}
+.grid-container a {
+  color:orange;
+  text-decoration: none;
+}
+.grid-container a:hover {
+  color:white;
 }
 .titeln {
   color: white;
@@ -98,6 +115,13 @@ body {
   position: relative;
   border-radius: 50rem;
   animation: rotation 10s infinite linear;
+}
+.spotify {
+  width:50%;
+  margin:auto;
+  display:block;
+  margin-top: 8rem;
+  
 }
 @keyframes rotation {
   from {
@@ -121,27 +145,37 @@ body {
   padding: 1rem;
   border: 3px solid orange;
   border-radius: 5rem;
+  font-family: "Architects Daughter", cursive;
+  font-family: "Josefin Sans", sans-serif;
 }
-.fnamecol {
+  .fnamecol {
   color: orange;
   font-size: 3rem;
   text-decoration: underline;
+  font-family: "Architects Daughter", cursive;
+  font-family: "Josefin Sans", sans-serif;
 }
 .lname {
   padding: 1rem;
   border: 3px solid orange;
   border-radius: 5rem;
+  font-family: "Architects Daughter", cursive;
+  font-family: "Josefin Sans", sans-serif;
 }
 .lnamecol {
   color: orange;
   font-size: 3rem;
   text-decoration: underline;
+  font-family: "Architects Daughter", cursive;
+  font-family: "Josefin Sans", sans-serif;
 }
 .knappen {
   margin: 1rem;
   font-size: 2rem;
   color: orange;
   border-radius: 5rem;
+  font-family: "Architects Daughter", cursive;
+  font-family: "Josefin Sans", sans-serif;
 }
 .lowbietext {
   color: white;
@@ -154,7 +188,20 @@ body {
   column-rule: 2px solid orange;
   font-family: "Architects Daughter", cursive;
   font-family: "Josefin Sans", sans-serif;
+  text-align: justify;
 }
+.titlejoe {
+  color: white;
+  text-align: center;
+  text-decoration: underline orange;
+}
+.joey {
+  margin:auto;
+  display:block;
+  border-radius: 50rem;
+  border: 5px solid orange;
+}
+
 
 @media screen and (max-width: 1200px) {
   .aside {
@@ -207,4 +254,10 @@ body {
     position: static;
     width: 100%;
   }
+  .dany {
+    float:none;
+    display:block;
+    position:static;
+    width: 100%;
+    }
 }
